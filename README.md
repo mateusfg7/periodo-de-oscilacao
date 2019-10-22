@@ -26,43 +26,43 @@ Calcula o perildo de ocilação de um pêndulo
 ocilacao.py [calculo] [astro] [base]
 ```
 ### Calculo
-> t - tempo de ocilação
+t - tempo de ocilação
 
-> c - comprimento do pêndulo
+c - comprimento do pêndulo
 
 ### Astro
-> sol - Sol
+sol - Sol
 
-> mer - Mercúrio
+mer - Mercúrio
 
-> ven - Venus
+ven - Venus
 
-> ter - Terra
+ter - Terra
 
-> mar - Marte
+mar - Marte
 
-> jup - Júpiter
+jup - Júpiter
 
-> sat - Saturno
+sat - Saturno
 
-> ura - Urano
+ura - Urano
 
-> net - Netuno
+net - Netuno
 
-> plu - Plutão
+plu - Plutão
 
-> lua - Lua
+lua - Lua
 
 ### Base
-> Comprimento da corda em centímetros para retornar o tempo de ocilação.
+Comprimento da corda em centímetros para retornar o tempo de ocilação.
 
-> Tempo de ocilação em segundos para retornar o comprimento da corda.
+Tempo de ocilação em segundos para retornar o comprimento da corda.
 
 ## Ex:
 ```
 ocilacao.py t ter 50
 ```
-Calcula o tempo de ocilação (em segundos) na terra com base no comprimento da corda (em centímetros)
+> Calcula o tempo de ocilação (em segundos) na terra com base no comprimento da corda (em centímetros)
 
 ![preview](preview.png)
 
