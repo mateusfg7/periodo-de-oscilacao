@@ -1,7 +1,8 @@
-from math import pi, sqrt
 from sys import argv as param
+from math import pi
 
 from identificar_astro import Main
+from functions import Functions as func
 
 def Menu():
     print("\nUse: ocilacao.py [calculo] [astro] [base]")
@@ -51,13 +52,6 @@ except ValueError:
         exit()
 
 
-def Tempo(comprimento, gravidade):
-    comprimentoEmCm = comprimento
-    L = comprimentoEmCm/100
-    g = gravidade
-    T = (2 * pi) * sqrt(L / g)
-    print("T ≅ {:.5f}s".format(T))
-
 def Comprimento(tempo, gravidade):
     g = gravidade
     T = tempo
@@ -71,7 +65,9 @@ astro = Main.astro(parametroDois)
 
 
 if parametroUm == "t":
-    Tempo(parametroTres, astro)
+    output = func.Tempo(parametroTres, astro)
+    print("T ≅ {:.5f}s".format(output))
+
 elif parametroUm == "c":
     Comprimento(parametroTres, astro)
 elif parametroUm == "help":
