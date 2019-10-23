@@ -1,7 +1,7 @@
 # Perildo de Ocilação
 Calcula o perildo de ocilação de um pêndulo
 
-![preview](equacao.gif)
+![preview](img/equacao.gif)
 
 ### T - Tempo
 
@@ -23,7 +23,7 @@ Calcula o perildo de ocilação de um pêndulo
 
 ## Use:
 ```
-ocilacao.py [calculo] [astro] [base]
+main.py [calculo] [astro] [base]
 ```
 ### Calculo
 t - tempo de ocilação
@@ -60,9 +60,9 @@ Tempo de ocilação em segundos para retornar o comprimento da corda.
 
 ## Ex:
 ```
-ocilacao.py t ter 50
+main.py t ter 50
 ```
 > Calcula o tempo de ocilação (em segundos) na terra com base no comprimento da corda (em centímetros)
 
-![preview](preview.png)
+![preview](img/preview.png)
 
