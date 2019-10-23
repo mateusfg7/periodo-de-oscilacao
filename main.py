@@ -1,5 +1,4 @@
 from sys import argv as param
-from math import pi
 
 from identificar_astro import Main
 from functions import Functions as func
@@ -52,16 +51,8 @@ except ValueError:
         exit()
 
 
-def Comprimento(tempo, gravidade):
-    g = gravidade
-    T = tempo
-    L = (T/4*(pi**2))*g
-    print("L ≅ {:.5f}cm".format(L))
-
-
 
 astro = Main.astro(parametroDois)
-
 
 
 if parametroUm == "t":
@@ -69,6 +60,8 @@ if parametroUm == "t":
     print("T ≅ {:.5f}s".format(output))
 
 elif parametroUm == "c":
-    Comprimento(parametroTres, astro)
+    output = func.Comprimento(parametroTres, astro)
+    print("L ≅ {:.5f}s".format(output))
+
 elif parametroUm == "help":
     Menu()
