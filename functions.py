@@ -1,6 +1,7 @@
 from math import pi, sqrt
 
 class Functions:
+    
     def __init__(self, comprimento, tempo, gravidade):
         self.Tempo(comprimento, gravidade)
         self.Comprimento(tempo, gravidade)
