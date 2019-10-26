@@ -1,11 +1,10 @@
 from sys import argv as param
 
-from menu import Menu
-from identificar_astro import Main
-from functions import Functions as func
+from lib.menu import *
+from lib.astro import *
+from lib.functions import *
 
-
-
+from carregar_json import carregar_astros as astros
 
 try:
     parametroUm = param[1]
@@ -14,27 +13,28 @@ try:
         parametroTres = float(param[3])
 except IndexError:
     print("Número de argumentos insuficientes!")
-    Menu()
+    menu()
     exit()
 except ValueError:
         print("Valor inválido ou inexistente!")
-        Menu()
+        menu()
         exit()
 
 
 try:
-    astro = Main.astro(parametroDois)
+    loadAstros = astros.carregar_astros()
+    astro = astro(parametroDois, loadAstros)
 except NameError:
     None
 
 
 if parametroUm == "t":
-    output = func.Tempo(parametroTres, astro)
+    output = tempo(parametroTres, astro)
     print("T ≅ {:.5f}s".format(output))
 
 elif parametroUm == "c":
-    output = func.Comprimento(parametroTres, astro)
+    output = comprimento(parametroTres, astro)
     print("L ≅ {:.5f}s".format(output))
 
 elif parametroUm == "help":
-    Menu()
+    menu()
