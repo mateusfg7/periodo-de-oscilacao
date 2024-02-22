@@ -1,11 +1,11 @@
 def menu():
         
     # MENU
-    print("\nUse: ocilacao.py [calculo] [astro] [base]")
+    print("\nUse: oscilacao.py [calculo] [astro] [base]")
     
     print("\nCalculo")
     print("""
-    t   tempo de ocilação
+    t   tempo de oscilação
     c   comprimento do pêndulo
     """)
         
@@ -26,8 +26,8 @@ def menu():
 
     print("\nBase")
     print("""
-    Comprimento da corda em centímetros para retornar o tempo de ocilação.
-    Tempo de ocilação em segundos para retornar o comprimento da corda.
+    Comprimento da corda em centímetros para retornar o tempo de oscilação.
+    Tempo de oscilação em segundos para retornar o comprimento da corda.
     """)
 
     print("\nhelp   retornar esse menu")
